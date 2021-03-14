@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D66D75;
+    background: -webkit-linear-gradient(to right, #E29587, #D66D75);
+    background: linear-gradient(to right, #E29587, #D66D75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 600px;
+}
+
+.logo-cart {
+    text-align: center;
+    margin: 20px;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    background-color: #D0D3D4;
+}
+
+.inputText-container {
+    display: flex;
+    padding: 5px 0;
+}
+
+.inputText-container input[type="text"] {
+    width: 100%;
+    height: 35px;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0 5px;
+    border: none;
+    font-family: "Roboto";
+}
+
+.inputText-container input[type="button"] {
+    padding: 0 30px;
+    font-family: "Roboto";
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1ABC9C;
+}
+
+.inputText-container input[type="button"]:active {
+    background-color: #17A589;
+}
+
+/* Lista das compraa */
+.todo-shopping-cart {
+    max-height: 430px;
+    overflow: auto;
+}
+
+.todo-shopping-cart ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.todo-shopping-cart li {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.todo-shopping-cart li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.todo-shopping-cart li button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.todo-shopping-cart li button:hover {
+    background-color: #17A589;
+    color: #FFF;
+}
+
+/* Remove button */
+.remove-button {
+    display: none;
+    text-align: center;
+    margin: 15px;
+}
+
+.remove-button button {
+    padding: 8px 18px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #1ABC9C;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.remove-button button:active {
+    background-color: #17A589;
+}
+
+/* Alert */
+.alert-container {
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    padding: 10px 20px;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.alert-container.error {
+    transform: translateY(-30px);
+    transition: transform 0.5s ease;
+}
+
+.alert-container span {
+    color: #FFF;
+}

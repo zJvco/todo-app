@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="awesome-icons/all.js"></script>
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-cart">
+            <h1>Carrinho de Compras <i class="fas fa-shopping-cart"></i></h1>
+        </div>
+        <div class="content">
+            <h3>Adicione um Item Abaixo</h3>
+            <div class="inputText-container">
+                <input type="text" name="txtToDo" id="txtToDo" maxlength="30">
+                <input type="button" id="add" value="ADICIONAR">
+            </div>
+        </div>
+        <div class="todo-shopping-cart">
+            <ul id="itemsToDo"></ul>
+        </div>
+        <div class="remove-button">
+            <button id="clear">LIMPAR</button>
+        </div>
+    </div>
+    <div class="alert-container">
+        <span id="alert">Mensagem de Erro</span>
+    </div>
+</body>
+</html>
